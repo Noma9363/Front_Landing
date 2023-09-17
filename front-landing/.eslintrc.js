@@ -9,6 +9,12 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
     ],
     rules: {
+        "jsx-a11y/label-has-associated-control": [
+            2,
+            {
+                "labelAttributes": ["htmlFor"]
+            }
+        ],
         camelcase: 'off',
         'linebreak-style': 0,
         'import/prefer-default-export': 0,
