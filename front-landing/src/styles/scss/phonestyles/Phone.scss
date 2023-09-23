@@ -1,0 +1,37 @@
+$ToastWidth: 200px;
+div{
+  .CreateUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .inputEle{
+      width: 70%;
+      display: block;
+    }
+    .createBtnStyles{
+      margin-top: 30px;
+      padding: 10px;
+      width: 30%;
+      font-size: 12px;
+    }
+  }
+}
+
+html::after {
+  content: "등록되었습니다";
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: inherit;
+  font-weight: bold;
+  position: absolute;
+  width: $ToastWidth;
+  left: calc(50% - $ToastWidth/ 2);
+  height: 50px;
+  bottom: 150px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
